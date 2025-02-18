@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Periodic Table</title>
+  <link rel="stylesheet" href="styles.css">
+  	<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1> Kanyoza's Periodic Table</h1>
+      <div class="controls">
+        <input type="text" id="search-input" placeholder="Search by name, symbol, or atomic number...">
+        <button id="theme-toggle">Toggle Dark Mode</button>
+        <button id="export-csv">Export as CSV</button>
+        <button id="export-json">Export as JSON</button>
+        <select id="filter-group">
+          <option value="">Filter by Group</option>
+          <option value="metal">Metals</option>
+          <option value="non-metal">Non-Metals</option>
+          <option value="noble-gas">Noble Gases</option>
+          <option value="alkali-metal">Alkali Metals</option>
+          <option value="alkaline-earth">Alkaline Earth Metals</option>
+          <option value="transition-metal">Transition Metals</option>
+          <option value="halogen">Halogens</option>
+          <option value="lanthanide">Lanthanides</option>
+          <option value="actinide">Actinides</option>
+        </select>
+        <select id="filter-state">
+          <option value="">Filter by State</option>
+          <option value="solid">Solid</option>
+          <option value="liquid">Liquid</option>
+          <option value="gas">Gas</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Periodic Table -->
+    <div id="periodic-table">
+      <!-- Elements will be dynamically inserted here by JavaScript -->
+    </div>
+
+    <!-- Details Panel -->
+    <div id="details-panel">
+      <h2 id="element-name">Element Name</h2>
+      <p><strong>Atomic Number:</strong> <span id="atomic-number">-</span></p>
+      <p><strong>Symbol:</strong> <span id="symbol">-</span></p>
+      <p><strong>Atomic Mass:</strong> <span id="atomic-mass">-</span></p>
+      <p><strong>Electron Configuration:</strong> <span id="electron-config">-</span></p>
+      <p><strong>Oxidation States:</strong> <span id="oxidation-states">-</span></p>
+      <p><strong>State:</strong> <span id="state">-</span></p>
+      <p><strong>Group:</strong> <span id="group">-</span></p>
+    </div>
+  </div>
+  
+  <div classi="footer" >© 2025 Kanyoza systems Ltd. All rights reserved. </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
