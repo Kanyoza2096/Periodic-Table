@@ -3,9 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #f4f4f4;
-  color: #333;
-  transition: background-color 0.3s, color 0.3s;
+  background-color: #61160c;
+  color: rgb(31, 22, 22);
+  transition: 0.3s, color 0.3s;
 }
 
 .container {
@@ -16,6 +16,13 @@ body {
 header {
   text-align: center;
   margin-bottom: 20px;
+
+}
+
+header h1{
+  color: orange;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .controls {
@@ -29,8 +36,15 @@ header {
 .controls input, .controls button, .controls select {
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #9dcf12;
+  transition: 0.3s, transform 0.2s;
+}
+
+ .controls select:hover{
+  transform: scale(1.1);
+  background-color: rgb(15, 141, 82);
 }
 
 /* Periodic Table */
@@ -47,12 +61,12 @@ header {
   border: 1px solid #ccc;
   cursor: pointer;
   background-color: #fff;
-  transition: background-color 0.3s, transform 0.2s;
+  transition:  0.3s, transform 0.2s;
 }
 
 .element:hover {
   transform: scale(1.1);
-  background-color: #e0e0e0;
+  background-color: #0ae08e;
 }
 
 /* Color Coding */
@@ -69,10 +83,11 @@ header {
 /* Details Panel */
 #details-panel {
   padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  border-radius: 5px;
+  border: 1px solid #a09109;
+  background-color: green;
+  border-radius: 15px;
   margin-top: 20px;
+  color:orange;
 }
 
 /* Dark Mode */
@@ -88,11 +103,23 @@ header {
   border-color: #555;
 }
 
-. footer{
-background-color:#333;
-Padding:30px;
+.footer{
+background-color:rgb(40, 98, 255);
+Padding:20px;
 Margin: 0.5rem;
+border-radius: 15px;
+color: #ccc;
+font-weight: bold;
+text-align: center;
 } 
+
+.logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
